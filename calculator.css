@@ -1,0 +1,74 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding: 0 40px;
+}
+.text{
+    font-size: 45px;
+    margin: 20px;
+}
+.container{
+    display: grid;
+    grid-template-areas: "result"
+    "buttons"
+    "buttons"
+    "buttons";
+    width: 300px;
+    height: 470px;
+    background-color: rgb(95, 170, 145);
+    border: 4px solid rgb(60, 105, 90);
+    border-radius: 20px;
+}
+.res{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: result;
+    width: 280px;
+    /* height: 100px; */
+    margin: 15px 10px;
+    /* border-width: 30%; */
+    /* border-bottom: 2px solid black;
+    border-bottom-width: 80%; */
+    /* background-color: rgb(166, 252, 223); */
+background-color: gray;    
+    border-radius: 8px;
+}
+.butt{
+    padding: 14px;
+    grid-area: buttons;
+    
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+/* section{
+    border: 2px solid red;
+} */
+.numbutt{
+    padding: 5px 10px;
+    width: 3rem;
+    height: 3.5rem;
+    font-size: 25px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+#equal{
+    border-radius: 1.5rem;
+}
+#screen{
+    font-size: 45px;
+    /* border: 2px solid red; */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 10px;
+    width: 260px;
+    height: 60px;
+    /* border-radius: 1rem; */
+    background-color: white;
+    /* box-shadow: 4px 10px grey; */
+    padding: 5px 10px;
+}
