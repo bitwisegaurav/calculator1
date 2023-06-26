@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="color-scheme" content="dark"> -->
+  <title>Basic Calculator</title>
+  <style>
+    *{
+      font-size: 40px;
+    }
+    body{
+      height: calc(100vh - 16px);
+      display: grid;
+      place-items: center;
+    }
+    .calculator {
+  height: 82vh;
+  aspect-ratio: 1;
+  background-color: #00000015;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  border: 0.1rem solid #f44336;
+  border-radius: 0.5rem;
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  height: 18.5%;
+}
+
+button {
+  width: 40%;
+  height: 100%;
+  margin: 5% 0;
+  cursor: pointer;
+  margin: 10px 2.5px;
+  border-radius: 0.5rem;
+  /* font-size: 16px; */
+}
+
+button:hover {
+  background-color: #0000000e;
+  transition: 0.3s;
+}
+
+.clear {
+  background-color: #f44336;
+  color: #fff;
+}
+.clear:hover {
+  background-color: #f44336e0;
+}
+#see{
+  width: calc(99% - 20px);
+  height: 20%;
+  flex-wrap: wrap;
+  border: 2px solid gray;
+  font-size: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 5px 10px;
+  overflow-x: auto;
+  border-radius: 0.5rem;
+}
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div id="see">0</div>
+    <div class="keypad">
+      <div class="row">
+        <button class="operator">+</button>
+        <button class="operator">-</button>
+        <button class="operator">x</button>
+        <button class="operator">/</button>
+        <button class="operator"><-</button>
+      </div>
+      <div class="row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+      </div>
+      <div class="row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+      </div>
+      <div class="row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+      </div>
+      <div class="row">
+        <button class="clear">C</button>
+        <button>0</button>
+        <button class="equal">=</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
